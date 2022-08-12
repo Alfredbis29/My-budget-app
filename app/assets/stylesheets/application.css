@@ -176,7 +176,7 @@ p.notice {
 
 .payment-details {
   align-items: center;
-  gap: 2px;
+  gap: 3px;
 }
 
 .payment-details button {
