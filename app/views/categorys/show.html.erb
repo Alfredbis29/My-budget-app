@@ -1,5 +1,5 @@
 <div class="border border-slate-200 p-8">
- <h3 class="text-4xl mb-4" >Great job. You have tracked $<%= @total_transactions%> of category <%= @category.name%></h3>
+ <h3 class="text-4xl mb-4" >Excellent work. You have kept track$<%= @total_transactions%> of category <%= @category.name%></h3>
 <img class="w-[40%] h-[10%]" src="<%= @category.icon%>" alt="...">
 <h3 class="text-2xl m-2"><%= @category.name%></h3>
 <% if @transactions.exists?%>
@@ -10,7 +10,7 @@
      </div>
   <% end%>
 <% else%>
-<p>No Transaction Done</p>
+<p>There has been no Transaction.</p>
 <% end%>
 <div class="grid w-[30%]">
 <%= link_to "Back", categorys_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4" %>
