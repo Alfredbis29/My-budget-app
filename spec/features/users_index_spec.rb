@@ -6,10 +6,6 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario 'show groups_path' do
-    expect(page).to have_content('Q Pay')
-  end
-
-  scenario 'show groups_path' do
     expect(page).to have_content('Log in')
   end
 
