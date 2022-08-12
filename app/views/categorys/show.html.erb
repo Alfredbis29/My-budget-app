@@ -1,0 +1,19 @@
+<div class="border border-slate-200 p-8">
+ <h3 class="text-4xl mb-4" >Great job. You have tracked $<%= @total_transactions%> of category <%= @category.name%></h3>
+<img class="w-[40%] h-[10%]" src="<%= @category.icon%>" alt="...">
+<h3 class="text-2xl m-2"><%= @category.name%></h3>
+<% if @transactions.exists?%>
+  <% @transactions.each do |t| %>
+     <div class="bg-gray-100 w-[50%] p-4 m-2 rounded-sm">
+     <p><strong>Transaction Name:</strong> <%=t.name%></p>
+     <p><strong>Transaction Amount:</strong> <%= t.amount%></p>
+     </div>
+  <% end%>
+<% else%>
+<p>No Transaction Done</p>
+<% end%>
+<div class="grid w-[30%]">
+<%= link_to "Back", categorys_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4" %>
+<%= link_to "Add Transaction", new_category_transaction_path(@category), class: "bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+</div>
+</div>

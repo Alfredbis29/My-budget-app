@@ -1,12 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  authenticated :user do
-    root 'groups#index', as: :authenticated_root
+  resources :categorys do
+    resources :transactions
   end
 
-  root to: 'users#index'
-
-  resources :groups
-  resources :payments
+  root "categorys#index"
 end
