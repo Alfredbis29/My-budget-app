@@ -43,9 +43,9 @@ To get a local copy up and running follow these simple example steps.
 
 ## Author
 
-- GitHub: [@sainingo](https://github.com/Alfredbis29)
-- Twitter: [@sainingo](https://www.linkedin.com/in/Alfred Bisimwa/)
-- LinkedIn: [sainingo](https://twitter.com/Alfred Bisimwa)
+- GitHub: [@Alfred](https://github.com/Alfredbis29)
+- Twitter: [@Alfred](https://www.linkedin.com/in/AlfredBisimwa/)
+- LinkedIn: [Alfred](https://twitter.com/AlfredBisimwa)
 
 ## 🤝 Contributing
 
