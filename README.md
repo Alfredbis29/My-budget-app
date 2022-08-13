@@ -5,11 +5,11 @@
 
 ## Preview
 
-## [Video Demo Link](https://www.loom.com/share/d61e8c6e45f94437b25aa2985e77d8e4)
+## [Video Demo Link]()
 
 ## Live Link
 
-- Visit this [live link](https://budgetr-tracker.herokuapp.com) to interact with the web app before cloning it.
+- Visit this [live link](https://my-budget-app1.herokuapp.com/) to interact with the web app before cloning it.
 
 
 ## Built With
@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 - You need Ruby v3+, Rails v7+ and Postgresql installed on your machine.
 
 ## Setup
-- Clone the project `git clone git@github.com:sainingo/budget_tracker.git`
+- Clone the project `https://github.com/Alfredbis29/My-budget-app.git`
 - navigate to the folder `cd rails-mint`
 - Install required gems `bundle install`
 - Load the database `rails db:reset`
@@ -43,19 +43,15 @@ To get a local copy up and running follow these simple example steps.
 
 ## Author
 
-<a href="https://github.com/sainingo" target="blank"><img align="center"
-      src="https://avatars.githubusercontent.com/u/32932447?s=40&v=4"
-      alt="adampithewan" height="50" width="50"/></a> **SANINGO**
-
-- GitHub: [@sainingo](https://github.com/sainingo)
-- Twitter: [@sainingo](https://www.linkedin.com/in/sainingo/)
-- LinkedIn: [sainingo](https://twitter.com/saningoInn)
+- GitHub: [@sainingo](https://github.com/Alfredbis29)
+- Twitter: [@sainingo](https://www.linkedin.com/in/Alfred Bisimwa/)
+- LinkedIn: [sainingo](https://twitter.com/Alfred Bisimwa)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Benmuiruri/budget_tracker/issues).
+Feel free to check the [issues page](https://github.com/Alfredbis29/My-budget-app/issues).
 
 ## Show your support
 
