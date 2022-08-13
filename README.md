@@ -5,7 +5,7 @@
 
 ## Preview
 
-## [Video Demo Link]()
+## [Video Demo Link](https://www.loom.com/share/a1fd6a770c59427db2b73c9695f44b3d)
 
 ## Live Link
 
