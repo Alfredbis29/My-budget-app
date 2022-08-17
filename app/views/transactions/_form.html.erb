@@ -1,0 +1,34 @@
+<%= form_with(model: transaction, url: category_transactions_path) do |form| %>
+  <% if transaction.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+        <% transaction.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ <div class="w-[80%] border border-slate-200 mx-auto my-4" >
+  <div class="p-2">
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name, class: 'w-full border border-gray-200 py-2' %>
+  </div>
+
+   <div class="p-2">
+    <%= form.label :amount, style: "display: block" %>
+    <%= form.number_field :amount, class: 'w-full border border-gray-200 py-2' %>
+  </div>
+
+    <div class="p-2">
+   
+    <%= form.hidden_field :category_id, value: params[:category_id]%>
+  </div>
+
+  <div class="bg-slate-500 hover:bg-green-700 text-white font-bold py-2 px-8 rounded mb-2">
+    <%= form.submit%>
+  </div>
+ </div>
+<% end %>
