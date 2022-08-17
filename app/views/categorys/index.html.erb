@@ -1,0 +1,14 @@
+<h1 class="text-4xl text-center m-2">Total Transaction for All Categories: $<%=@total_category_transactions%></h1>
+<div class="grid md:gap-4 md:grid-cols-3 p-2 lg:grid-cols-3 ">
+  <% @category.each do |category|%>
+  <div class="border border-gray-200 shadow-xl rounded-lg p-4 my- mx-2">
+ <img class="w-[80%] h-[40%]" src="<%= category.icon%>" alt="...">
+ <h1 class="text-2xl font-bold m-4"><%= link_to category.name, category_path(category.id)%></h1>
+  <%= link_to "View",  category_path(category.id), class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"%>
+  </div>
+<% end%>
+</div>
+
+<div class="mt-2">
+<%= link_to "Add New Category", new_category_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded ml-8"%>
+</div>

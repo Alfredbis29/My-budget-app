@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TransactionWebApp</title>
+    <title>My-Budget-app</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+      <% if user_signed_in?%>
+       <%= render "shared/header"%>
+       <%= yield %>
+      <%else%>
+      <%= yield %>
+      <% end%>
   </body>
 </html>
